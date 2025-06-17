@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaladUp - Fresh Fruit_Salad Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="public/logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <!-- It is header part for the website -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="./public/fevicon.png" alt="BurgerUp Logo">
+                </div>
+                <nav class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#feedback" class="nav-link">Feedback</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#pages" class="nav-link">Pages</a>
+                </nav>
+                <div class="nav-actions" id="home">
+                    <div class="cart-icon">
+                        <!-- Icon of shoping bar -->
+                        <i class="fas fa-shopping-cart"></i> 
+                        <span class="cart-count">2</span>
+                    </div>
+                    <div class="user-info">
+                        <span>Hello, Bittu 😀</span>
+                        <!-- Icon for user -->
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                 <a href="#popular"><button class="order-btn">Order Now</button></a> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Best In Indore</p>
+                    <h1 class="hero-title">
+                        ENJOY OUR<br>
+                        <span class="text-red">Fruit Salad</span><br>
+                        <span class="text-blue">FAST FOOD</span>
+                    </h1>
+                    <p class="hero-description">
+                        Delicious Salad, Fruits, Drinks 
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn-primary">Order Now</button>
+                        <div class="price-info">
+                            <span>Price: $10.50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./public/main_photo.png" class="burger-image">
+                    <!-- <div class="floating-elements">
+                        <div class="floating-tomato"></div>
+                        <div class="floating-cheese"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Burgers Grid -->
+   <section class="featured-burgers">
+    <div class="container" id="menu">
+        <div class="burgers-grid">
+            <div class="burger-card large dark">
+                <div class="card-content">
+                    <h3>Classic Fruit Salad</h3>
+                    <p>Apple, banana, grapes, and pomegranate</p>
+                    <button class="card-btn">Order Now</button>
+                </div>
+                <img src="" alt="Classic Fruit Salad">
+            </div>
+            <div class="burger-card green">
+                <div class="card-content">
+                    <h3>Berry Delight</h3>
+                    <p>Strawberries, blueberries, raspberries</p>
+                    <button class="card-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="burger-card orange">
+                <div class="card-content">
+                    <h3>Tropical Mix</h3>
+                    <p>Mango, pineapple, papaya & coconut</p>
+                    <button class="card-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="burger-card small dark">
+                <div class="card-content">
+                    <h3>Melon Medley</h3>
+                    <p>Watermelon, muskmelon & mint</p>
+                    <button class="card-btn">Order Now</button>
+                </div>
+                <img src="/placeholder.svg?height=110&width=140" alt="Melon Salad">
+            </div>
+            <div class="burger-card small dark">
+                <div class="card-content">
+                    <h3>Fruit Chaat</h3>
+                    <p>Spicy & tangy Indian-style mix</p>
+                    <button class="card-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="burger-card red">
+                <div class="card-content">
+                    <h3>Creamy Fruit Salad</h3>
+                    <p>Mixed fruits with cream & honey</p>
+                    <button class="card-btn">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Popular Menu -->
+   <section class="popular-menu">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-subtitle">Food Items</p>
+            <h2 class="section-title">Popular Menu</h2>
+        </div>
+        
+        <div class="menu-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="burger">Salad</button>
+                <button class="tab-btn" data-category="chicken">Juice</button>
+                <button class="tab-btn" data-category="drinks">Fruits</button>
+                <button class="tab-btn" data-category="pizza">Fruit Combo</button>
+            </div>
+        </div>
+
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="/placeholder.svg?height=80&width=80" alt="Classic Fruit Salad">
+                <div class="item-info">
+                    <h4>Classic Salad</h4>
+                    <p>Apple, banana, grapes, pomegranate</p>
+                    <span class="price">Price: $5.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/placeholder.svg?height=80&width=80" alt="Berry Salad">
+                <div class="item-info">
+                    <h4>Berry Delight</h4>
+                    <p>Strawberries, blueberries, raspberries</p>
+                    <span class="price">Price: $6.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/placeholder.svg?height=80&width=80" alt="Tropical Salad">
+                <div class="item-info">
+                    <h4>Tropical Mix</h4>
+                    <p>Mango, pineapple, papaya & coconut</p>
+                    <span class="price">Price: $6.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="/placeholder.svg?height=80&width=80" alt="Chaat Style Salad">
+                <div class="item-info">
+                    <h4>Fruit Chaat</h4>
+                    <p>Spicy and tangy Indian fruit mix</p>
+                    <span class="price">Price: $4.50</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Best Quality Ingredients -->
+   <section class="ingredients">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-subtitle">Why Choose Us?</p>
+            <h2 class="section-title">Best Quality Item<br>Ingredients</h2>
+        </div>
+        
+        <div class="ingredients-grid">
+            <div class="ingredient-item">
+                <img src="/placeholder.svg?height=100&width=100" alt="Mixed Fruit Cream Bowl">
+                <h4>Mixed Fruit Cream Bowl</h4>
+                <p>Fresh fruits topped with sweet cream</p>
+                <span class="price">Price: $7.50</span>
+            </div>
+            <div class="ingredient-item">
+                <img src="/placeholder.svg?height=100&width=100" alt="Green Apple Slices">
+                <h4>Green Apple Slices</h4>
+                <p>Crunchy and tart apple slices</p>
+                <span class="price">Price: $4.00</span>
+            </div>
+            <div class="ingredient-item">
+                <img src="/placeholder.svg?height=100&width=100" alt="Chopped Pineapple">
+                <h4>Chopped Pineapple</h4>
+                <p>Juicy and sweet tropical fruit chunks</p>
+                <span class="price">Price: $5.50</span>
+            </div>
+            <div class="ingredient-item">
+                <img src="/placeholder.svg?height=100&width=100" alt="Fresh Berries Mix">
+                <h4>Fresh Berries Mix</h4>
+                <p>Blueberries, raspberries, and strawberries</p>
+                <span class="price">Price: $6.50</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Super Delicious Burger -->
+   <section class="super-burger">
+    <div class="container">
+        <div class="super-burger-content">
+            <div class="burger-info">
+                <h2>Super Fresh Fruit Salad Bowl</h2>
+                <span class="price">$9.99</span>
+                <button class="btn-primary">Order Now</button>
+            </div>
+            <div class="burger-visual">
+                <img src="./public/delicious.png" alt="Super Fresh Fruit Salad Bowl" width="800" height="300">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Delivery Section -->
+    <section class="delivery">
+        <div class="container">
+            <div class="delivery-content">
+                <div class="delivery-text">
+                    <p class="section-subtitle">Fast Delivery</p>
+                    <h2 class="section-title">
+                        A Moments Of Delivered<br>
+                        On Right Time & Place
+                    </h2>
+                    <p class="delivery-description">
+                        Food is a great way to bring people together and create lasting memories. Whether it's a family dinner, a romantic date, or a gathering with friends.
+                    </p>
+                    <div class="delivery-stats">
+                        <div class="stat">
+                            <i class="fas fa-motorcycle"></i>
+                            <span>Fast Delivery in 30 Minutes</span>
+                        </div>
+                        <button class="btn-primary">Order Now</button>
+                    </div>
+                </div>
+                <div class="delivery-visual">
+                    <img src="./public/delicious.png alt="Delivery Scooter">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes -->
+    <section class="popular-dishes">
+    <div class="container" id="popular">
+        <div class="section-header">
+            <p class="section-subtitle">Food Items</p>
+            <h2 class="section-title">Popular Dishes</h2>
+            <button class="view-all-btn">View All</button>
+        </div>
+        
+        <div class="dishes-grid">
+            <div class="dish-card">
+                <img src="./public/firstfruit.avif" alt="Tropical Fruit Salad">
+                <div class="dish-info">
+                    <h4>Tropical Fruit Salad</h4>
+                    <p>Fresh mix of mango, pineapple & kiwi</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(4.9)</span>
+                    </div>
+                    <span class="price">Price: $6.50</span>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="./public/berry bowl.avif" alt="Berry Bowl">
+                <div class="dish-info">
+                    <h4>Berry Bowl</h4>
+                    <p>Blueberries, strawberries & raspberries</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(4.8)</span>
+                    </div>
+                    <span class="price">Price: $7.50</span>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="./public/special salad.avif" alt="Green Salad">
+                <div class="dish-info">
+                    <h4>Special Salad</h4>
+                    <p>Lettuce, cucumber, avocado, lemon zest</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(4.6)</span>
+                    </div>
+                    <span class="price">Price: $5.50</span>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="./public/apple.avif" alt="Apple-Walnut Salad">
+                <div class="dish-info">
+                    <h4>Apple-Walnut Salad</h4>
+                    <p>Crispy apples with nuts & honey dressing</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(4.7)</span>
+                    </div>
+                    <span class="price">Price: $6.00</span>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="./public/yogurt1.avif" alt="Fruit Yogurt Bowl">
+                <div class="dish-info">
+                    <h4>Fruit Yogurt Bowl</h4>
+                    <p>Mixed fruits with Greek yogurt</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(4.8)</span>
+                    </div>
+                    <span class="price">Price: $6.80</span>
+                </div>
+            </div>
+            <div class="dish-card">
+                <img src="./public/citrus.avif" alt="Citrus Splash Salad">
+                <div class="dish-info">
+                    <h4>Citrus Splash Salad</h4>
+                    <p>Orange, grapefruit, mint & honey</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span>(4.5)</span>
+                    </div>
+                    <span class="price">Price: $6.20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- We Serve Passion -->
+    <section class="serve-passion">
+        <div class="container">
+            <div class="passion-content">
+                <div class="chef-section">
+                    <img src="/placeholder.svg?height=300&width=250" alt="Chef" class="chef-image">
+                    <div class="chef-info">
+                        <h3>Our Chef</h3>
+                        <h2>We Serve <span class="text-red">Passion</span></h2>
+                        <p>Our experienced chefs prepare every dish with love and passion</p>
+                    </div>
+                </div>
+                <div class="menu-showcase">
+                    <div class="menu-item-card">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Burger Patties">
+                        <div class="item-details">
+                            <h4>Citrus Splash Salad</h4>
+                            <p>Fresh and juicy salad</p>
+                            <span class="price">Price: $8.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="/placeholder.svg?height=80&width=80" alt="Vegetarian Pizza">
+                        <div class="item-details">
+                            <h4>Fruit Yogurt Bowl</h4>
+                            <p>Loaded with fresh fruits</p>
+                            <span class="price">Price: $10.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Feedback -->
+    <section class="testimonials"  id="feedback">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Testimonials</p>
+                <h2 class="section-title">Client <span class="text-red">Feedback</span></h2>
+            </div>
+            
+            <div class="testimonials-grid" >
+                <div class="testimonial-card">
+                    <div class="client-info" >
+                        <img src="./public/msd.jpeg" alt="John Smith">
+                        <div class="client-details">
+                            <h4>MS Dhoni</h4>
+                            <div class="rating" >★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"The fruits quality is amazing and the delivery is always on time. Highly recommended!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="client-info">
+                        <img src="./public/virat.jpeg" alt="Sarah Johnson" width="200">
+                        <div class="client-details">
+                            <h4>Virat Kohli</h4>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Best salad in town! The ingredients are fresh and the taste is incredible."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Our Weekly <span class="text-red">Newsletter</span></h2>
+                    <p>Subscribe to get updates about new dishes and special offers</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button class="btn-primary">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="/placeholder.svg?height=40&width=120" alt="BurgerUp Logo">
+                    </div>
+                    <p>Delicious food delivered to your doorstep</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Food Street, indore</p>
+                    <p>📞 +1 234 567 8900</p>
+                    <p>✉️ freshfruit@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div> <br><br>
+                         <h5>Special thanks to <a href="https://www.linkedin.com/in/mratunjay-patle-979501263?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZSto%2Bn0mT9yXRvsrxbS5%2Fg%3D%3D">Mratunjay Patle</a> </h5>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FruitsUp. All rights reserved.</p>
+       
+                </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
